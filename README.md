@@ -21,3 +21,8 @@ Balsamiq:
 Drive:
 
 [Link a Drive](https://drive.google.com/drive/u/0/folders/10CzNmA7Y7L3Ro_eGu1i9SEleuFOSKYqA)
+
+Diagrama de gantt:
+
+[Link a calendario](https://docs.google.com/spreadsheets/d/1t5dF4Ct58H5U0TO-A7d8kJ2kJXItVHOtrsRafKrGe5M/edit?usp=sharing)
+
