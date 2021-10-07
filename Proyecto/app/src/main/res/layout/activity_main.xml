@@ -7,142 +7,23 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btndir"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="235dp"
-        android:layout_marginTop="492dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="182dp"
-        android:text="Directorio"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.978" />
-
-    <Button
-        android:id="@+id/btntramun"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="537dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="46dp"
-        android:text="Tramites Municipales"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnsimcred"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="337dp"
-        android:layout_marginBottom="337dp"
-        android:text="Simulacion de creditos"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835" />
-
-    <Button
-        android:id="@+id/btncalcregs"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="192dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="490dp"
-        android:text="Calculadora Registral"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
-
-    <Button
-        android:id="@+id/btnvalcom"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="235dp"
-        android:layout_marginTop="337dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="337dp"
-        android:text="Valorizacion Comercial"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835" />
-
-    <Button
-        android:id="@+id/btncalimp"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="492dp"
-        android:layout_marginEnd="235dp"
-        android:layout_marginBottom="182dp"
-        android:text="Calculadora de impuestos"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.978" />
-
-    <Button
-        android:id="@+id/btncontratos"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginBottom="490dp"
-        android:background="#000A81"
-        android:text="Contratos"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="576dp"
-        android:text="B"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
-        android:layout_width="269dp"
+        android:id="@+id/btn_main"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Buscar"
-        android:minHeight="48dp"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="148dp"
+        android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="72dp"
+        android:text="main por definir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

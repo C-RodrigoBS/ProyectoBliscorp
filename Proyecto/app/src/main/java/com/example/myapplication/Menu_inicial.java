@@ -6,25 +6,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class Menu_inicial extends AppCompatActivity {
 
-    Button btn_main;
+    Button btncontratos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu_inicial);
 
-        btn_main = (Button) findViewById(R.id.btn_main);
-        btn_main.setOnClickListener(new View.OnClickListener() {
+        btncontratos = (Button) findViewById(R.id.btncontratos);
+        btncontratos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Menu_inicial.class));
+                startActivity(new Intent(Menu_inicial.this, contratos.class));
             }
         });
     }
-
 }
