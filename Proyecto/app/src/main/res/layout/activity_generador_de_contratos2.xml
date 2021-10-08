@@ -10,95 +10,124 @@
         android:id="@+id/chbxsr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="71dp" />
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/txsr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/chbxsrta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="71dp" />
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/txsrta"
+        app:layout_constraintStart_toEndOf="@+id/chbxsr"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/chbxsra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="71dp" />
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/txsra"
+        app:layout_constraintStart_toEndOf="@+id/chbxsrta"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtdni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
+        app:backgroundTint="#A81A17"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="143dp" />
+        android:text="@string/txdni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chbxsr" />
 
     <EditText
         android:id="@+id/txtdir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
+        app:backgroundTint="#A81A17"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="268dp" />
+        android:text="@string/txdire"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxestciv" />
 
     <Spinner
         android:id="@+id/cbxestciv"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="216dp" />
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdni" />
 
     <Spinner
         android:id="@+id/cbxdep"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="353dp" />
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdir" />
 
     <Spinner
         android:id="@+id/cbxpro"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="429dp" />
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="53dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxdep" />
 
     <Spinner
         android:id="@+id/cbxdis"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="507dp" />
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxpro" />
 
     <Button
         android:id="@+id/btnlim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="616dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txlim"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintStart_toEndOf="@+id/btnter"
+        app:layout_constraintTop_toBottomOf="@+id/cbxdis" />
 
     <Button
         android:id="@+id/btnter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="615dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txter"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbxdis" />
 
     <Button
         android:id="@+id/btnsig2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="616dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txsig"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintStart_toEndOf="@+id/btnlim"
+        app:layout_constraintTop_toBottomOf="@+id/cbxdis" />
 </androidx.constraintlayout.widget.ConstraintLayout>

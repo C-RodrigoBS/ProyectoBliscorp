@@ -21,7 +21,7 @@ public class Generador_de_contratos extends AppCompatActivity {
         setContentView(R.layout.activity_generador_de_contratos);
 
         combo = (Spinner) findViewById(R.id.cbxprop);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.arrcbx, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.arrcbxper, android.R.layout.simple_spinner_item);
         combo.setAdapter(adapter);
 
         btnsig = (Button) findViewById(R.id.btnsig);

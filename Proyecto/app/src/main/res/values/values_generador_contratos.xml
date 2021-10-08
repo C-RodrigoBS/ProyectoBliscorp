@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="arrcbx">
+    <string-array name="arrcbxper">
        <item>"1"</item>
        <item>"2"</item>
        <item>"3"</item>
@@ -15,4 +15,54 @@
    <string name="txtit">Formulario</string>
    <string name="txlbl1">Número de propietarios:</string>
    <string name="txsig">SIGUIENTE</string>
+   <string name="txsr">Sr.</string>
+   <string name="txsra">Sra.</string>
+   <string name="txsrta">Srta.</string>
+   <string name="txdni">DNI</string>
+   <string name="txdire">Dirección</string>
+   <string name="txter">TERMINAR</string>
+   <string name="txlim">LIMPIAR</string>
+   <string name="txtitcont3">Datos de Inmueble</string>
+   <string-array name="arrcbxest">
+      <item>"Soltero"</item>
+      <item>"Casado"</item>
+      <item>"Viudo"</item>
+      <item>"Divorciado"</item>
+   </string-array>
+   <string-array name="arrcbxdep">
+      <item>"Arequipa"</item>
+      <item>"Cusco"</item>
+      <item>"Moquegua"</item>
+      <item>"Puno"</item>
+   </string-array>
+   <string-array name="arrcbxpro">
+      <item>"Castilla"</item>
+      <item>"Caylloma"</item>
+      <item>"Arequipa"</item>
+      <item>"Islay"</item>
+   </string-array>
+   <string-array name="arrcbxdis">
+      <item>"Miraflores"</item>
+      <item>"Cercado"</item>
+      <item>"Hunter"</item>
+      <item>"Paucarpata"</item>
+   </string-array>
+   <string-array name="arrcbxtipinm">
+      <item>"Departamentos"</item>
+      <item>"Casa"</item>
+      <item>"Comercial"</item>
+   </string-array>
+   <string-array name="arrcbxtipdoc">
+      <item>"DNI(Peruano)"</item>
+      <item>"DNI(Español)"</item>
+   </string-array>
+   <string-array name="arrcbxdiv">
+      <item>"S./"</item>
+      <item>"$./"</item>
+   </string-array>
+   <string name="txnro">Nro.</string>
+   <string name="txpre">Precio de inmueble</string>
+   <string name="txcom">Comisión</string>
+   <string name="txfir">Firma</string>
+   <string name="txgen">GENERAR CONTRATO</string>
 </resources>
