@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="txventexc">VENTA EXCLUSIVA</string>
+    <string name="txventnoexc">VENTA NO EXCLUSIVA</string>
+    <string name="txalqexc">ALQUILER EXCLUSIVO</string>
+    <string name="txalqnoexc">ALQUILER NO EXCLUSIVO</string>
+    <string name="txantexc">ANTICRESIS EXCLUSIVA</string>
+    <string name="txantnoexc">ANTICRESIS NO EXCLUSIVA</string>
+    <string name="txresven">RESERVA VENTA</string>
+    <string name="txresalq">RESERVA ALQUILER</string>
+    <string name="txtitcontratos">Generador de Contratos</string>
+</resources>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Generador_de_contratos2"
+            android:exported="true" />
+        <activity
+            android:name=".Generador_de_contratos"
+            android:exported="true" />
+        <activity
             android:name=".Menu_inicial"
             android:exported="true" />
         <activity

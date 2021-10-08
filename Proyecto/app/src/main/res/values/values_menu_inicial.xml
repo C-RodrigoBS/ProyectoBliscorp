@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txcon">CONTRATOS</string>
+    <string name="txcalregs">CALCULADORA REGISTRAL</string>
+    <string name="txsimcre">SIMULADOR DE CREDITOS</string>
+    <string name="txvalcom">VALORIZACIÓN COMERCIAL</string>
+    <string name="txcalimp">CALCULADORA DE IMPUESTOS</string>
+    <string name="txdir">DIRECTORIO</string>
+    <string name="txramun">TRAMITES MUNICIPALES</string>
+    <string name="txbus">Buscar</string>
+    <string name="txb">B</string>
+</resources>
