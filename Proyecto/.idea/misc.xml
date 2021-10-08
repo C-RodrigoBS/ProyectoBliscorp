@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_contratos2.xml" value="0.20416666666666666" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_de_contratos.xml" value="0.20416666666666666" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_de_contratos2.xml" value="0.20416666666666666" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_de_contratos3.xml" value="0.20416666666666666" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_de_contratos4.xml" value="0.20416666666666666" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_menu_inicial.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Daniel/Desktop/gittecsup/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_contratos2.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Daniel/Desktop/gittecsup/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_de_contratos.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Daniel/Desktop/gittecsup/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_de_contratos2.xml" value="0.25407608695652173" />
@@ -14,7 +22,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
