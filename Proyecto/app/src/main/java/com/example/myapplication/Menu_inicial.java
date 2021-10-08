@@ -10,6 +10,7 @@ import android.widget.Button;
 public class Menu_inicial extends AppCompatActivity {
 
     Button btncontratos;
+    Button btncalimp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,21 @@ public class Menu_inicial extends AppCompatActivity {
         setContentView(R.layout.activity_menu_inicial);
 
         btncontratos = (Button) findViewById(R.id.btncontratos);
+        btncalimp = (Button) findViewById(R.id.btncalimp);
+
         btncontratos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Menu_inicial.this, contratos.class));
             }
+
         });
+        btncalimp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu_inicial.this, Calculadora_impuesto.class));
+            }
+        });
+
     }
 }
