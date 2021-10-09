@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tipo_usuario"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="11dp">
+
+
+    <Button
+        android:id="@+id/btn_brokerTU"
+        android:layout_width="180dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="164dp"
+        android:text="@string/txtbbrokerTU"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_agenteInvTU"
+        android:layout_width="180dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/txtbageninviTU"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agenBlisTU" />
+
+    <Button
+        android:id="@+id/btn_agenBlisTU"
+        android:layout_width="180dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/txtbagenblisTU"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_brokerTU" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

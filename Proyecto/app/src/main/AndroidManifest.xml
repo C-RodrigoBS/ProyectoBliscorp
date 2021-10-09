@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".simulador_creditos"
+            android:exported="true" />
+        <activity
+            android:name=".registro_usua"
+            android:exported="true" />
+        <activity
+            android:name=".tipo_usuario"
+            android:exported="true" />
+        <activity
             android:name=".Calculadora_impuesto"
             android:exported="true" />
         <activity

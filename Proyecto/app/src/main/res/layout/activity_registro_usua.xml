@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro_usua">
+
+
+    <TextView
+        android:id="@+id/txtV_titureistroUsuariosRU"
+        android:layout_width="202dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtv_tituloRU"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV_idRU"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/txtv_idRU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_titureistroUsuariosRU" />
+    <EditText
+        android:id="@+id/edtn_idRU"
+        android:layout_width="305dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_idRU" />
+
+
+    <TextView
+        android:id="@+id/txtV_nombreRU"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/txtv_nombreRU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtn_idRU" />
+    <EditText
+        android:id="@+id/edt_nombreRU"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_nombreRU" />
+
+    <TextView
+        android:id="@+id/txtV_correoRU"
+        android:layout_width="148dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/txtv_correoERU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nombreRU" />
+    <EditText
+        android:id="@+id/edtema_correoRU"
+        android:layout_width="313dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_correoRU" />
+
+
+    <TextView
+        android:id="@+id/txtV_contraRU"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/txtv_contrasenaRU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtema_correoRU" />
+    <EditText
+        android:id="@+id/edtpss_contraRU"
+        android:layout_width="311dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_contraRU" />
+
+
+    <TextView
+        android:id="@+id/txtV_confirContraRU"
+        android:layout_width="158dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/txtv_confirmarcontraRU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpss_contraRU" />
+
+
+    <EditText
+        android:id="@+id/edtpss_confirContraRU"
+        android:layout_width="311dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registrarUsuarioRU"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_registrarUsuarioRU"
+        android:layout_width="132dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="117dp"
+        android:text="@string/txtbregistroRU"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btn_cancelarRU"
+        android:layout_width="117dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="117dp"
+        app:backgroundTint="#A81A17"
+        android:text="@string/txtbcancelarRU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

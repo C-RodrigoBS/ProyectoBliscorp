@@ -7,5 +7,39 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <!-- Botones para Seleccion de tipo de Usuario -->
+
+    <string name="txtbbrokerTU">Broker</string>
+    <string name="txtbagenblisTU">Agente Blis</string>
+    <string name="txtbageninviTU">Agente Invitado</string>
+
+
+    <!-- Registro de Usuario -->
+
+    <string name="txtv_tituloRU">Registro de Usuario</string>
+    <string name="txtv_idRU">ID</string>
+    <string name="txtv_nombreRU">Nombre</string>
+    <string name="txtv_correoERU">Correo Electronico</string>
+    <string name="txtv_contrasenaRU">Contraseña</string>
+    <string name="txtv_confirmarcontraRU">Confirmar Contraseña</string>
+
+    <string name="txtbregistroRU">Registrar Usuario</string>
+    <string name="txtbcancelarRU">Cancelar</string>
+
+    <!-- Simulador de Credito -->
+
+    <string name="txtv_titusimcredSC"> Simulador de Credito</string>
+    <string name="txtv_montoSC">Monto:</string>
+    <string name="txtv_plazoSC">Plazo:</string>
+    <string name="txtv_inteanualSC">Interes Anual:</string>
+    <string name="txtv_valcuotaSC">Valor Cuota:</string>
+    <string name="txtv_totpagarSC">Total a Pagar:</string>
+    <string name="txtv_totinteresSC">Total Interes:</string>
+
+    <string name="txtbcalcularSC">Calcular</string>
+    <string name="txtblimpiarSC">Limpiar</string>
+    <string name="txtbtabarmotiSC">Tabla de amortizacion</string>
+
+
 
 </resources>
