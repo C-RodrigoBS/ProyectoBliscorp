@@ -11,6 +11,7 @@ public class Menu_inicial extends AppCompatActivity {
 
     Button btncontratos;
     Button btncalimp;
+    Button btnSimuladorContra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,8 @@ public class Menu_inicial extends AppCompatActivity {
 
         btncontratos = (Button) findViewById(R.id.btncontratos);
         btncalimp = (Button) findViewById(R.id.btncalimp);
+        btnSimuladorContra = (Button) findViewById(R.id.btnsimcred);
+
 
         btncontratos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +34,13 @@ public class Menu_inicial extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Menu_inicial.this, Calculadora_impuesto.class));
+            }
+        });
+
+        btnSimuladorContra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Menu_inicial.this, simulador_creditos.class));
             }
         });
 

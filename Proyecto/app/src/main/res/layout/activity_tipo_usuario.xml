@@ -1,46 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_claro"
     tools:context=".tipo_usuario"
     tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="11dp">
+    tools:layout_editor_absoluteY="11dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="BIENVENIDO"
+                android:textAllCaps="false"
+                android:textColor="#514B4B"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="(ELIJA SU TIPO DE USUARIO)"
+                android:textColor="#1E1C1C"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/broker"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:backgroundTint="#00705353"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/usuario_broker" />
+
+            <ImageButton
+                android:id="@+id/agente_blis"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:backgroundTint="#00705353"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/usuario_agente_blis" />
+
+            <ImageButton
+                android:id="@+id/externo"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:backgroundTint="#00705353"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/usuario_externo" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Ver como invitado"
+                android:textColor="#191818"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
-    <Button
-        android:id="@+id/btn_brokerTU"
-        android:layout_width="180dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="164dp"
-        android:text="@string/txtbbrokerTU"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_agenteInvTU"
-        android:layout_width="180dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="92dp"
-        android:text="@string/txtbageninviTU"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_agenBlisTU" />
-
-    <Button
-        android:id="@+id/btn_agenBlisTU"
-        android:layout_width="180dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="68dp"
-        android:text="@string/txtbagenblisTU"
-        app:backgroundTint="#A81A17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_brokerTU" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -10,98 +10,89 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/fondo_oscuro"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginBottom="60dp"
-            android:gravity="center"
-            android:text="LOGIN"
-            android:textColor="#A81A17"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="40dp"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:shadowColor="#3F51B5"
-                android:text="Usuario:"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#A81A17"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="40dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Contraseña:"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/editTextTextPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#A81A17"
-                android:ems="10"
-                android:inputType="textPassword" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="179dp"
-            android:layout_height="wrap_content"
+            android:layout_height="190dp"
             android:layout_marginTop="40dp"
-            android:layout_marginBottom="50dp"
-            android:backgroundTint="#A81A17"
-            android:gravity="center"
-            android:text="Registrarse"
-            android:textSize="10sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="40dp"
+            app:srcCompat="@drawable/logos_alterno" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp"
+            android:background="@drawable/usuario"
+            android:ems="10"
+            android:hint="Nombre de usuario"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="75dp"
+            android:background="@drawable/contrase_a"
+            android:ems="10"
+            android:hint="*********"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="287dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#A81A17"
+            android:id="@+id/buttonAgente"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="75dp"
+            android:backgroundTint="@color/main"
             android:gravity="center"
-            android:text="Agente Blis"
+            android:text="INICIAR SESIÓN"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="O REGISTRATE"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="110dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/google" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="110dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/facebook" />
+        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>

@@ -64,9 +64,10 @@
         app:backgroundTint="#A81A17"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <Button
         android:id="@+id/btnvalcom"
@@ -119,7 +120,7 @@
         app:layout_constraintVertical_bias="0.505" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonRegistrarse"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
