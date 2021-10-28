@@ -15,17 +15,17 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        /*btnAgente = (Button)findViewById(R.id.buttonAgente);
-        registrarse=(Button)findViewById(R.id.buttonRegistrarse);
+        btnAgente = (Button)findViewById(R.id.buttonAgente);
+        //registrarse=(Button)findViewById(R.id.buttonRegistrarse);
 
         btnAgente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this, tipo_usuario.class));
+                startActivity(new Intent(Login.this, Menu_inicial.class));
             }
 
         });
-
+        /*
         registrarse.setOnClickListener(new View.OnClickListener() {
                                            @Override
                                            public void onClick(View view) {
