@@ -85,6 +85,13 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/google" />
 
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="25dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:text="Button" />
+
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
@@ -92,6 +99,8 @@
                 android:layout_marginRight="110dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/facebook" />
+
+
         </LinearLayout>
 
     </LinearLayout>
