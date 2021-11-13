@@ -21,7 +21,7 @@ public class Login extends AppCompatActivity {
         btnAgente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this, Menu_inicial.class));
+                startActivity(new Intent(Login.this, Aplicaciones.class));
             }
 
         });
