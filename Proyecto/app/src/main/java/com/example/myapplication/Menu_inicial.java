@@ -23,13 +23,13 @@ public class Menu_inicial extends AppCompatActivity {
         btnSimuladorContra = (Button) findViewById(R.id.btnsimcred);
 
 
-        btncontratos.setOnClickListener(new View.OnClickListener() {
+        /*btncontratos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Menu_inicial.this, contratos.class));
             }
 
-        });
+        });*/
         btncalimp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

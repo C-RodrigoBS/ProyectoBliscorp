@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Datos_inmueble"
+            android:exported="true" />
+        <activity
             android:name=".Aplicaciones"
             android:exported="true" />
         <activity
