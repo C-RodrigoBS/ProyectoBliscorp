@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "956875599539",
+    "project_id": "bliscorp-9884e",
+    "storage_bucket": "bliscorp-9884e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956875599539:android:08afb7c4586de22ae54ac6",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956875599539-8m8omj4148i6bnp6gonjab9rn2om5bap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHC0hIf3sQPOoNm5U2f1YAsC0J8Xr6qX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956875599539-8m8omj4148i6bnp6gonjab9rn2om5bap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

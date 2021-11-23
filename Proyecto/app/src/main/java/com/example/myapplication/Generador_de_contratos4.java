@@ -5,7 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 public class Generador_de_contratos4 extends AppCompatActivity {
 
     Spinner combo;

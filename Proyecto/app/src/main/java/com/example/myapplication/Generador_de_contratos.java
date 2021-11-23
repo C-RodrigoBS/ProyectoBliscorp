@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 public class Generador_de_contratos extends AppCompatActivity {
 
 

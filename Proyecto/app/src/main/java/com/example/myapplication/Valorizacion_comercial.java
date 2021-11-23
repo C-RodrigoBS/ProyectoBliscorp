@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
-public class Calculadora_impuesto extends AppCompatActivity {
+public class Valorizacion_comercial extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calculadora_impuesto);
+        setContentView(R.layout.activity_valorizacion_comercial);
     }
 }
