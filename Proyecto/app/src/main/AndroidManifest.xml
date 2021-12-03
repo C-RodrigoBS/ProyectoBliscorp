@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".generador_contratos2"
+            android:exported="true" />
+        <activity
+            android:name=".Calculadora_Impuestos"
+            android:exported="true" />
+        <activity
             android:name=".Datos_inmueble"
             android:exported="true" />
         <activity

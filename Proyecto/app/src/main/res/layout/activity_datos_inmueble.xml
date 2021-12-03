@@ -22,8 +22,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Datos de inmueble"
             android:textAlignment="center"
+            android:text="Datos de inmueble"
+
             android:textColor="#0B0A0A"
             android:textSize="20sp"
             android:textStyle="bold" />

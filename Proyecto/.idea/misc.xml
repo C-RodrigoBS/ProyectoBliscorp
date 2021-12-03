@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_aplicaciones.xml" value="0.25" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_calculadora_impuesto.xml" value="0.33" />
-        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_contratos2.xml" value="0.20416666666666666" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_calculadora_impuestos.xml" value="0.33" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_contratos2.xml" value="0.25" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_datos_inmueble.xml" value="0.33" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_contratos2.xml" value="0.25" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_de_contratos.xml" value="0.20416666666666666" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_de_contratos2.xml" value="0.20416666666666666" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_generador_de_contratos3.xml" value="0.33" />
@@ -14,7 +16,7 @@
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_menu_inicial.xml" value="0.20416666666666666" />
-        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_pantalla_carga.xml" value="0.17777777777777778" />
+        <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_pantalla_carga.xml" value="0.22" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_registro_usua.xml" value="0.25" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_simulador_creditos.xml" value="0.33" />
         <entry key="..\:/PROYECTOS GIT/Bliscorp_app/ProyectoBliscorp/Proyecto/app/src/main/res/layout/activity_tipo_usuario.xml" value="0.33" />

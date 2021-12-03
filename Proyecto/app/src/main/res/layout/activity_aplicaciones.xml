@@ -32,7 +32,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -49,12 +49,12 @@
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="70dp"
                         app:srcCompat="@drawable/contratos" />
 
                     <Button
                         android:id="@+id/contratos"
-                        android:layout_width="160dp"
+                        android:layout_width="145dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/main"
                         android:text="CONTRATOS"
@@ -71,12 +71,12 @@
                     <ImageView
                         android:id="@+id/imageView4"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="70dp"
                         app:srcCompat="@drawable/calculadora_registral" />
 
                     <Button
                         android:id="@+id/registral"
-                        android:layout_width="160dp"
+                        android:layout_width="145dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/main"
                         android:text=" CALCULADORA REGISTRAL"
@@ -104,12 +104,12 @@
                     <ImageView
                         android:id="@+id/imageView5"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="70dp"
                         app:srcCompat="@drawable/simulador_de_creditos" />
 
                     <Button
                         android:id="@+id/creditos"
-                        android:layout_width="160dp"
+                        android:layout_width="145dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/main"
                         android:text="SIMULADOR DE CREDITOS"
@@ -126,12 +126,12 @@
                     <ImageView
                         android:id="@+id/imageView7"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="70dp"
                         app:srcCompat="@drawable/valorizacion_comercial" />
 
                     <Button
                         android:id="@+id/valorizacion"
-                        android:layout_width="160dp"
+                        android:layout_width="145dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/main"
                         android:text="VALORIZACION COMERCIAL"
@@ -158,12 +158,12 @@
                     <ImageView
                         android:id="@+id/imageView8"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="70dp"
                         app:srcCompat="@drawable/calculadora_de_impuestos" />
 
                     <Button
                         android:id="@+id/impuestos"
-                        android:layout_width="160dp"
+                        android:layout_width="145dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/main"
                         android:text="CALCULADORA DE IMPUESTOS"
@@ -180,12 +180,12 @@
                     <ImageView
                         android:id="@+id/imageView9"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="70dp"
                         app:srcCompat="@drawable/directorio" />
 
                     <Button
                         android:id="@+id/directorio"
-                        android:layout_width="160dp"
+                        android:layout_width="145dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/main"
                         android:text="DIRECTORIO"
@@ -211,12 +211,12 @@
                     <ImageView
                         android:id="@+id/imageView10"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="70dp"
                         app:srcCompat="@drawable/tramites_municipales" />
 
                     <Button
                         android:id="@+id/tramites"
-                        android:layout_width="160dp"
+                        android:layout_width="145dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/main"
                         android:text="TRAMITES MUNICIPALES"
