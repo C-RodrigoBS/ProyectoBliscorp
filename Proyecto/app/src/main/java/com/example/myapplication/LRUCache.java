@@ -1,4 +1,4 @@
-package pruebas;
+package com.example.myapplication;
 
 import java.util.HashMap;
 
