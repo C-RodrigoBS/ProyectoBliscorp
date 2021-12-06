@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -12,12 +13,16 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
 import com.lowagie.text.Image;
@@ -31,12 +36,21 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+
+import android.app.Application;
+import android.content.Context;
 
 public class Calculadora_impuesto extends AppCompatActivity {
 
     String NOMBRE_DIRECTORIO = "MisPDFs";
     String NOMBRE_DOCUMENTO = "MiPDF.pdf";
+
+    LRUCache lru;
 
     EditText iptvalor_inmueble;
     EditText iptprecio_adquisicion;
@@ -51,8 +65,11 @@ public class Calculadora_impuesto extends AppCompatActivity {
     Button btncalcularIR;
     Button btnverarchivosIR;
     Button btnverarchivosIRlru;
+    Button btnrevisar;
 
-    Bitmap bmp, scaledbmp;
+    Spinner spnOpcionesLru;
+
+    //Bitmap bmp, scaledbmp;
 
 
     @Override
@@ -63,6 +80,7 @@ public class Calculadora_impuesto extends AppCompatActivity {
         btncalcularIR = findViewById(R.id.btncalcularIR);
         btnverarchivosIR = findViewById(R.id.btnverarchivosIR);
         btnverarchivosIRlru = findViewById(R.id.btnverarchivosIRlru);
+        btnrevisar = findViewById(R.id.btnrevisar);
 
         iptvalor_inmueble = findViewById(R.id.iptvalor_inmueble);
         iptprecio_adquisicion = findViewById(R.id.iptprecio_adquisicion);
@@ -73,7 +91,32 @@ public class Calculadora_impuesto extends AppCompatActivity {
         cbxunica_propiedad = findViewById(R.id.cbxunica_propiedad);
         cbxocupada_mas2años = findViewById(R.id.cbxocupada_mas2años);
 
+        spnOpcionesLru = findViewById(R.id.spnOpcionesLru);
 
+        SharedPreferences sharedPreferences = getSharedPreferences("LRU",Context.MODE_PRIVATE);
+
+        Gson gson = new Gson();
+        String json = sharedPreferences.getString("LRU", "");
+
+        System.out.println("============================================================================================================");
+        System.out.println(json);
+
+        if(json == null || json == ""){
+            lru = new LRUCache(20);
+        }else{
+            lru = gson.fromJson(json, LRUCache.class);
+        }
+
+        List<String> temp = new ArrayList<String>();
+        Iterator<String> it = lru.getKeys().iterator();
+        while(it.hasNext()){
+            temp.add((String) it.next());
+        }
+
+        ArrayAdapter<CharSequence> adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, temp);
+        spnOpcionesLru.setAdapter(adapter);
+
+        /*
         // Permisos
         if(ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) !=
                 PackageManager.PERMISSION_GRANTED &&
@@ -83,13 +126,36 @@ public class Calculadora_impuesto extends AppCompatActivity {
                     1000);
         }
 
+         */
+
         btncalcularIR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 validar_formulario();
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                /*
+                Gson gson = new GsonBuilder()
+                        .registerTypeAdapter(LRUCache.class, new MyTypeAdapter<LRUCache>())
+                        .create();
+                 */
+                Gson gson = new Gson();
+                String json = gson.toJson(lru);
+                editor.putString("LRU",json);
+                editor.commit();
+
             }
         });
 
+        btnrevisar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                revisar();
+            }
+        });
+
+
+        /*
         btnverarchivosIR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,35 +170,67 @@ public class Calculadora_impuesto extends AppCompatActivity {
             }
         });
 
+         */
+
+
     }
+
+    private void revisar(){
+        String valor_spiner = spnOpcionesLru.getSelectedItem().toString();
+        String[] datos_lru = (String[]) lru.get(valor_spiner);
+
+        Intent i =new Intent(this, reporte_impuestos.class);
+        i.putExtra("impuesto", datos_lru[0] );
+        i.putExtra("aplica", datos_lru[1]);
+        i.putExtra("datos_extra", datos_lru[2]);
+        startActivity(i);
+    }
+
     private void obtener_calculo(){
-        DateFormat df1 = new SimpleDateFormat("yyyy/MM/dd");
-        String date= df1.format(Calendar.getInstance().getTime());
-        NOMBRE_DOCUMENTO = "" + ((int) (Math.random()*10000000)) + "&" + date+".pdf";
 
         double valor_inmueble = Double.parseDouble(iptvalor_inmueble.getText().toString());
         double precio_adquisicion = Double.parseDouble(iptprecio_adquisicion.getText().toString());
-        double impuesto = (valor_inmueble - (precio_adquisicion * 1.00)) * 0.05;
+        String impuesto = String.valueOf((valor_inmueble - (precio_adquisicion * 1.00)) * 0.05);
         boolean[] datos = validar_cbx();
-        crearPDF(impuesto, "No aplica","");
-        Toast.makeText(Calculadora_impuesto.this, "SE CREO EL PDF", Toast.LENGTH_LONG).show();
-
         if (datos[0] || datos [1]){
-            crearPDF(impuesto, "No aplica","");
-            Toast.makeText(Calculadora_impuesto.this, "SE CREO EL PDF", Toast.LENGTH_LONG).show();
+
+            String[] datos_lru = {impuesto, "No aplica", ""};
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+            String currentDateandTime = sdf.format(new Date());
+            String key = "Calculo-" + currentDateandTime;
+            lru.set(key, datos_lru);
+
+            Intent i =new Intent(this, reporte_impuestos.class);
+            i.putExtra("impuesto", impuesto );
+            i.putExtra("aplica", "No aplica");
+            i.putExtra("datos_extra", "");
+            startActivity(i);
+            //crearPDF(impuesto, "No aplica","");
+            //Toast.makeText(Calculadora_impuesto.this, "SE CREO EL PDF", Toast.LENGTH_LONG).show();
         }else{
             String datos_extra = "";
             if (!datos[0]){
-                datos_extra += "\nLa propiedad debio estar inscrita antes del año 2004";
+                datos_extra += "La propiedad debio estar inscrita\nantes del año 2004.\n";
             }
             if (!datos[2]){
-                datos_extra += "\nEsta debe ser su unica propiedad";
+                datos_extra += "Esta debe ser su unica propiedad.\n";
             }
             if (!datos[3]){
-                datos_extra += "\nLa propiedad Debio haber estado ocupada por almenos dos años";
+                datos_extra += "La propiedad debio haber estado\nocupada por almenos dos años.";
             }
-            crearPDF(impuesto, "Si aplica", datos_extra);
-            Toast.makeText(Calculadora_impuesto.this, "SE CREO EL PDF", Toast.LENGTH_LONG).show();
+            String[] datos_lru = {impuesto, "Si aplica", datos_extra};
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+            String currentDateandTime = sdf.format(new Date());
+            String key = "Calculo-" + currentDateandTime;
+            lru.set(key, datos_lru);
+
+            Intent i =new Intent(this, reporte_impuestos.class);
+            i.putExtra("impuesto", impuesto);
+            i.putExtra("aplica", "Si aplica");
+            i.putExtra("datos_extra", datos_extra);
+            startActivity(i);
+            //crearPDF(impuesto, "Si aplica", datos_extra);
+            //Toast.makeText(Calculadora_impuesto.this, "SE CREO EL PDF", Toast.LENGTH_LONG).show();
         }
 
 
@@ -141,7 +239,7 @@ public class Calculadora_impuesto extends AppCompatActivity {
 
     private void validar_formulario(){
         if (!validar(iptvalor_inmueble, tilvalor_inmueble, "Debe ingresar el valor del inmueble")){
-            return;
+            return ;
         }
         if (!validar(iptprecio_adquisicion, tilprecio_adquisicion, "Debe ingresar el valor de adquisicion")){
             return;

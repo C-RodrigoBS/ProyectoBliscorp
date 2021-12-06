@@ -1,85 +1,51 @@
 package com.example.myapplication;
 
-import java.util.HashMap;
+import java.util.*;
 
-public class LRUCache<K, V>{
-
-    // Define Node with pointers to the previous and next items and a key, value pair
-
-    private HashMap<K, Node<K, V>> cache;
-    private Node<K, V> leastRecentlyUsed;
-    private Node<K, V> mostRecentlyUsed;
-    private int maxSize;
-    private int currentSize;
-
-    public LRUCache(int maxSize){
-        this.maxSize = maxSize;
-        this.currentSize = 0;
-        leastRecentlyUsed = new Node<K, V>(null, null, null, null);
-        mostRecentlyUsed = leastRecentlyUsed;
-        cache = new HashMap<K, Node<K, V>>();
-    }
-
-    public V get(K key){
-        Node<K, V> tempNode = cache.get(key);
-        if (tempNode == null){
-            return null;
-        }
-        // If MRU leave the list as it is
-        else if (tempNode.key == mostRecentlyUsed.key){
-            return mostRecentlyUsed.value;
-        }
-
-        // Get the next and previous nodes
-        Node<K, V> nextNode = tempNode.next;
-        Node<K, V> previousNode = tempNode.previous;
-
-        // If at the left-most, we update LRU 
-        if (tempNode.key == leastRecentlyUsed.key){
-            nextNode.previous = null;
-            leastRecentlyUsed = nextNode;
-        }
-
-        // If we are in the middle, we need to update the items before and after our item
-        else if (tempNode.key != mostRecentlyUsed.key){
-            previousNode.next = nextNode;
-            nextNode.previous = previousNode;
-        }
-
-        // Finally move our item to the MRU
-        tempNode.previous = mostRecentlyUsed;
-        mostRecentlyUsed.next = tempNode;
-        mostRecentlyUsed = tempNode;
-        mostRecentlyUsed.next = null;
-
-        return tempNode.value;
+public class LRUCache {
+    private int size;
+    private Map<String, Data> cache;
+    private LinkedList<Data> dataList;
+    public LRUCache(int size) {
+        super();
+        this.size = size;
+        this.cache = new HashMap<>();
+        this.dataList = new LinkedList<>();
 
     }
 
-    public void put(K key, V value){
-        if (cache.containsKey(key)){
-            return;
+    public Set getKeys(){
+        return cache.keySet();
+    }
+    public Object get(String key) {
+        if (cache.containsKey(key)) {
+            Data data = cache.get(key);
+            // Remove the data from its location
+            dataList.remove(data);
+            // Add it to the end of the list
+            dataList.add(data);
+            return data.getValue();
         }
-
-        // Put the new node at the right-most end of the linked-list
-        Node<K, V> myNode = new Node<K, V>(mostRecentlyUsed, null, key, value);
-        mostRecentlyUsed.next = myNode;
-        cache.put(key, myNode);
-        mostRecentlyUsed = myNode;
-
-        // Delete the left-most entry and update the LRU pointer
-        if (currentSize == maxSize){
-            cache.remove(leastRecentlyUsed.key);
-            leastRecentlyUsed = leastRecentlyUsed.next;
-            leastRecentlyUsed.previous = null;
-        }
-
-        // Update cache size, for the first added entry update the LRU pointer
-        else if (currentSize < maxSize){
-            if (currentSize == 0){
-                leastRecentlyUsed = myNode;
+        return "NA";
+    }
+    public void set(String key, String[] value) {
+        if (cache.containsKey(key)) {
+            Data oldData = cache.get(key);
+            // Remove old data from linkedlist
+            dataList.remove(oldData);
+            Data newData = new Data(key, value);
+            // Update the value
+            cache.put(key, newData);
+            // Add new data at the end of the linkedlist
+            dataList.add(newData);
+        } else {
+            Data data = new Data(key, value);
+            if (cache.size() >= size) {
+                // Remove the oldest value from both map and linkedlist
+                cache.remove(dataList.pollFirst().getKey());
             }
-            currentSize++;
+            cache.put(key, data);
+            dataList.add(data);
         }
     }
 }

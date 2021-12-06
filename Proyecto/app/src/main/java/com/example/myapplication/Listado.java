@@ -38,7 +38,7 @@ public class Listado extends AppCompatActivity {
 
         item = new ArrayList<String>();
 
-        File f = new File(Environment.getExternalStorageDirectory() + "/MisPDFs/");
+        File f = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/MisPDFs/");
         File[] files = f.listFiles();
 
         for (int i = 0; i < files.length; i++)
