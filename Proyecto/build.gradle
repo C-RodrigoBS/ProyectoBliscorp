@@ -3,15 +3,22 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
     dependencies {
+<<<<<<< HEAD
         classpath "com.android.tools.build:gradle:7.0.2"
         classpath 'com.google.gms:google-services:4.3.10'
 
+=======
+        classpath 'com.android.tools.build:gradle:7.0.3'
+        classpath "io.realm:realm-gradle-plugin:10.8.1"
+>>>>>>> 5254b7ffa43070c3947482c2169a941e4027509e
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

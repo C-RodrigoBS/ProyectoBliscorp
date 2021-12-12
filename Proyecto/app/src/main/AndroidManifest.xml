@@ -2,7 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
+=======
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+>>>>>>> 5254b7ffa43070c3947482c2169a941e4027509e
 
     <application
         android:allowBackup="true"
@@ -12,6 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+<<<<<<< HEAD
             android:name=".nuevo"
             android:exported="true" />
         <activity
@@ -19,6 +26,33 @@
             android:exported="true" />
         <activity
             android:name=".Valorizacion_comercial"
+=======
+            android:name=".reporte_impuestos"
+            android:exported="false" />
+        <activity
+            android:name=".Listado_lru"
+            android:exported="false" />
+        <activity
+            android:name=".Listado"
+            android:exported="false" />
+        <activity
+            android:name=".Datos_inmueble"
+            android:exported="true" />
+        <activity
+            android:name=".Aplicaciones"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".simulador_creditos"
+            android:exported="true" />
+        <activity
+            android:name=".registro_usua"
+            android:exported="true" />
+        <activity
+            android:name=".tipo_usuario"
+>>>>>>> 5254b7ffa43070c3947482c2169a941e4027509e
             android:exported="true" />
         <activity
             android:name=".Calculadora_impuesto"
@@ -45,7 +79,7 @@
             android:name=".contratos"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Pantalla_carga"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.util.Log;
 import android.widget.Toast;
 
@@ -27,9 +28,15 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+=======
+import android.view.View;
+import android.widget.Button;
+import io.realm.Realm;
+import io.realm.mongodb.mongo.MongoClient;
+>>>>>>> 5254b7ffa43070c3947482c2169a941e4027509e
 
-public class Login extends AppCompatActivity {
 
+<<<<<<< HEAD
     private static final String TAG = "FacebookLogin";
 
     // [START declare_auth]
@@ -38,11 +45,17 @@ public class Login extends AppCompatActivity {
 
     private CallbackManager mCallbackManager;
 
+=======
+public class Login extends AppCompatActivity {
+    Button registrarse;
+    Button btnAgente;
+>>>>>>> 5254b7ffa43070c3947482c2169a941e4027509e
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+<<<<<<< HEAD
         mAuth = FirebaseAuth.getInstance();
         // [END initialize_auth]
 
@@ -125,6 +138,33 @@ public class Login extends AppCompatActivity {
             finish();
             Toast.makeText(Login.this,"Ingreso Correctamente",Toast.LENGTH_SHORT).show();
         }
+=======
+        btnAgente = (Button)findViewById(R.id.buttonAgente);
+        //registrarse=(Button)findViewById(R.id.buttonRegistrarse);
+
+        btnAgente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this, Aplicaciones.class));
+            }
+
+        });
+        /*
+        registrarse.setOnClickListener(new View.OnClickListener() {
+                                           @Override
+                                           public void onClick(View view) {
+                                              registrar(view);
+                                           }
+                                       }
+        );*/
 
     }
+    public void registrar(View view){
+        Intent intent = new Intent(this,registro_usua.class);
+        startActivity(intent);
+>>>>>>> 5254b7ffa43070c3947482c2169a941e4027509e
+
+    }
+
+
 }

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcc3e521-f2ae-475d-b997-b8b86177eb56" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Proyecto/app/src/main/java/com/example/myapplication/Tramites_municipales.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Proyecto/app/src/main/java/com/example/myapplication/Valorizacion_comercial.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Proyecto/app/src/main/res/layout/activity_tramites_municipales.xml" afterDir="false" />
@@ -14,6 +15,13 @@
       <change beforePath="$PROJECT_DIR$/Proyecto/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proyecto/app/src/main/java/com/example/myapplication/Menu_inicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/app/src/main/java/com/example/myapplication/Menu_inicial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proyecto/app/src/main/res/layout/activity_calculadora_impuesto.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/app/src/main/res/layout/activity_calculadora_impuesto.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyecto/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyecto/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyecto/app/src/main/java/com/example/myapplication/Aplicaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/app/src/main/java/com/example/myapplication/Aplicaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyecto/app/src/main/java/com/example/myapplication/Menu_inicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/app/src/main/java/com/example/myapplication/Menu_inicial.java" afterDir="false" />
+>>>>>>> 5254b7ffa43070c3947482c2169a941e4027509e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

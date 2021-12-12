@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".simulador_creditos"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="14dp">
+
+
+    <Button
+        android:id="@+id/btn_tabAnotaSC"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="67dp"
+        android:text="@string/txtbtabarmotiSC"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVR_totinteresesSC"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="60dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/btn_tabAnotaSC"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV_totinteresesSC"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/txtv_totinteresSC"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tabAnotaSC"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV_totpagarSC"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/txtv_totpagarSC"
+        app:layout_constraintBottom_toTopOf="@+id/txtV_totinteresesSC"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV_valcuotaSC"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/txtv_valcuotaSC"
+        app:layout_constraintBottom_toTopOf="@+id/txtV_totpagarSC"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVR_valcuotaSC"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="32dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtVR_totpagarSC"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVR_totpagarSC"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="32dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtVR_totinteresesSC"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_limpiarSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="47dp"
+        android:text="@string/txtblimpiarSC"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintBottom_toTopOf="@+id/txtVR_valcuotaSC"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_calcularSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="47dp"
+        android:text="@string/txtbcalcularSC"
+        app:backgroundTint="#A81A17"
+        app:layout_constraintBottom_toTopOf="@+id/txtV_valcuotaSC"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV_titusimulaCredSC"
+        android:layout_width="238dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/txtv_titusimcredSC"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtV_montoSC"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/txtv_montoSC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_titusimulaCredSC" />
+
+    <EditText
+        android:id="@+id/edtn_inteAnualSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_limpiarSC"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV_inteAnualSC"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/txtv_inteanualSC"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcularSC"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV_plazoSC"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/txtv_plazoSC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_montoSC" />
+
+    <EditText
+        android:id="@+id/edtn_plazoSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/edtn_inteAnualSC"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edtn_montoSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtV_montoSC"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_titusimulaCredSC" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
